@@ -9,21 +9,6 @@ import animals.mammals.Predator;
 public class Main {
     public static void main(String[] args) {
         separator("⋮");
-        Mammals lion = new Mammals("Lion", 5, 0, "");
-        System.out.println(lion);
-        lion.toWalk();
-
-        separator("⋮");
-        Amphibian salamander = new Amphibian("Salamander", 2, "");
-        System.out.println(salamander);
-        salamander.toHunt();
-
-        separator("⋮");
-        Bird sparrow = new Bird("Sparrow", 1, "City");
-        System.out.println(sparrow);
-        sparrow.toHunt();
-
-        separator("⋮");
         // Herbivore class objects
         Herbivore gazelle = new Herbivore("Gazelle", 3, "Grass");
         System.out.println(gazelle);

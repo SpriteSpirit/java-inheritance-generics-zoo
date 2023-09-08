@@ -14,6 +14,14 @@ public class FlightBird extends Bird {
     }
 
     // functional methods                                          --------------------------------------------*********
+
+    @Override
+    public void toHunt() {
+        {
+            System.out.printf("%s hunting%n", getName());
+        }
+    }
+
     public void toFly() {
         System.out.printf("%s flying%n", getName());
     }

@@ -2,7 +2,7 @@ package animals.bird;
 
 import animals.Animal;
 
-public class Bird extends Animal {
+public abstract class Bird extends Animal {
     private String environment;
 
     // constructors                                                --------------------------------------------*********
@@ -30,9 +30,7 @@ public class Bird extends Animal {
     public void go() {
         System.out.printf("%s promenade...%n", getName());
     }
-    public void toHunt() {
-        System.out.printf("%s hunting%n", getName());
-    }
+    public abstract void toHunt();
 
     // getters and setters                                         --------------------------------------------*********
     public String getEnvironment() {

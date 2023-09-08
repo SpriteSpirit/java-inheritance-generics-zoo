@@ -2,7 +2,7 @@ package animals.mammals;
 
 import animals.Animal;
 
-public class Mammals extends Animal {
+public abstract class Mammals extends Animal {
     private String environment;
     private float moveSpeed;
 
@@ -37,9 +37,7 @@ public class Mammals extends Animal {
     public void go() {
         System.out.printf("%s promenade...%n", getName());
     }
-    public void toWalk() {
-        System.out.printf("%s walking with %.2f speed%n", getName(), getMoveSpeed());
-    }
+    public abstract void toWalk();
 
     // getters and setters                                         --------------------------------------------*********
     public String getEnvironment() {

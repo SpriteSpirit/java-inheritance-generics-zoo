@@ -13,6 +13,11 @@ public class Herbivore extends Mammals {
     }
 
     // functional methods                                          --------------------------------------------*********
+
+    @Override
+    public void toWalk() {
+        System.out.printf("%s walking %.2f km/h%n", getName(), getMoveSpeed());
+    }
     public void toGaze() {
         System.out.printf("%s to gazing%n", getName());
     }

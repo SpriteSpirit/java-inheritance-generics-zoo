@@ -13,12 +13,7 @@ public abstract class Animal {
 
     public Animal(String name, int age) {
         this.name = name;
-        if (age > 0) {
-            this.birthYear = LocalDate.now().getYear() - age;
-        } else {
-            this.birthYear = LocalDate.now().getYear() - Math.abs(age);
-            ;
-        }
+            this.birthYear = age > 0 ? LocalDate.now().getYear() - age : LocalDate.now().getYear() - Math.abs(age);
     }
 
     // functional methods                                          --------------------------------------------*********

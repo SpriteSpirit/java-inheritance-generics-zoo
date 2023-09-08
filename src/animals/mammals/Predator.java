@@ -13,6 +13,10 @@ public class Predator extends Mammals {
     }
 
     // functional methods                                          --------------------------------------------*********
+    @Override
+    public void toWalk() {
+        System.out.printf("%s walking %.2f km/h%n", getName(), getMoveSpeed());
+    }
     public void toHunt() {
         System.out.printf("%s to hunting on%n", getName());
     }
